@@ -83,6 +83,8 @@ class CISStackTest {
         cisStack.push(12);
 
         expected = "CISStack{stack=[8, 10, 12], size=3}";
+        /** technically, it would be better if it shows top --> 12 --> 10 --> 8
+         * since 12 is the last added, so it should be at the top */
         assertEquals(expected, cisStack.toString());
 
     }
